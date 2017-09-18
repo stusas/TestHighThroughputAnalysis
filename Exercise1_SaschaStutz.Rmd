@@ -1,0 +1,28 @@
+---
+title: "Exercise1_StutzSascha"
+author: "Sascha Stutz"
+date: "18 September 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+We sample 1000 points form a normal distribution: 
+
+```{r sample}
+x <- rnorm(1000, mean = 1, sd = 0.25)
+```
+
+## A histogram
+
+Here is the code to generate a histogram
+
+```{r pressure, echo=TRUE}
+hist(x, 200)
+```
+
+
+Let's randomly add group names to the sampled data
